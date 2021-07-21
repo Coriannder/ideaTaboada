@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 20px; }
+
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
+.header__imgImagen {
+  width: 100%; }
+
+@media (max-width: 600px) {
+  /*          MEDIA MOBILE               */
+  .header__divImagen {
+    display: none; } }
+
+.footer {
+  background-color: black;
+  height: 100px;
+  color: #6e6e6e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer .footer__containerLogos {
+    display: flex;
+    justify-content: center; }
+  .footer .footer__imagenLogoRedes {
+    width: 35px;
+    padding: 0 4px; }
+
+.botonLink, .divSecciones__botonLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  margin: 3rem 0rem;
+  padding: 1.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 239px;
+  height: 54px;
+  border: 3px solid black;
+  border-radius: 2px;
+  transition: all 0.2s; }
+  .botonLink:hover, .divSecciones__botonLink:hover {
+    background-color: black;
+    color: white; }
+
+.divSecciones {
+  padding: 80px 12%  2rem 12%;
+  justify-content: center; }
+  .divSecciones__h2Titulo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    padding-bottom: 1rem; }
+  .divSecciones__subLineasH2 {
+    border-bottom: 5px double #d18902;
+    width: 2.6rem;
+    padding-top: 1rem; }
+  .divSecciones__parrafo {
+    grid-area: parrafo; }
+  .divSecciones__imgFotoRedonda {
+    width: 120%;
+    margin-left: -5%; }
+
+@media (max-width: 600px) {
+  /*          MEDIA MOBILE               */
+  .divSecciones__divFotoRedonda {
+    width: 80vw;
+    height: 80vw;
+    border-radius: 50%;
+    overflow: hidden; }
+  .divSecciones--quienes {
+    padding-top: 80px; } }
+
+/*                 MEDIA > 600 px               */
+@media (min-width: 600px) {
+  .divSecciones__divFotoRedonda {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    grid-area: betular; }
+  .divSecciones--quienes {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    column-gap: 5%;
+    grid-template-rows: 20% 40% 10%;
+    grid-template-areas: "titulo betular" "parrafo betular" "boton betular"; }
+  .divSecciones__divH2Titulo {
+    grid-area: titulo; }
+  .divSecciones__parrafo {
+    grid-area: parrafo; }
+  .divSecciones__botonLink {
+    grid-area: boton; }
+  .divSecciones--cotizacion {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    column-gap: 5%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "titulo boton" "parrafo boton"; } }
+
+.divSeparation {
+  padding-top: 10vw; }
+
+.botonLink, .divSecciones__botonLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  margin: 3rem 0rem;
+  padding: 1.5rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 239px;
+  height: 54px;
+  border: 3px solid black;
+  border-radius: 2px;
+  transition: all 0.2s; }
+  .botonLink:hover, .divSecciones__botonLink:hover {
+    background-color: black;
+    color: white; }
+
+.formulario {
+  padding: 80px 12%  2rem 12%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .formulario__form {
+    width: 50%; }
+  .formulario__input {
+    border: 1px solid red;
+    width: 80%;
+    height: 40px;
+    padding-left: 5%;
+    background-color: rgba(202, 201, 201, 0.212); }
+  .formulario__textArea {
+    padding-top: 5px;
+    padding-left: 5%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 80%;
+    height: 120px; }
+
+@media (max-width: 600px) {
+  /*          MEDIA MOBILE               */
+  .formulario {
+    flex-direction: column; }
+    .formulario__form {
+      width: 100%; }
+    .formulario__input {
+      width: 100%;
+      height: 40px;
+      background-color: rgba(202, 201, 201, 0.212); }
+    .formulario__textArea {
+      width: 100%;
+      height: 120px; } }
+
+/*         clases de barra de navegacion (dentro de footer) con BOOTSTRAP          */
+.navbar-brand {
+  display: flex; }
+
+.navbar-collapse {
+  justify-content: center; }
+
+.bg-dark {
+  background-color: black !important; }
+
+.dropdown-menu {
+  background-color: black; }
+
+.dropdown-item {
+  color: white; }
+
+#navbarDropdownMenuLink :focus .accordion-button:not(.collapsed) {
+  background-color: #d18902;
+  color: white;
+  font-weight: 900; }
+
+/*          Acordion en servicios            */
+.accordion-button {
+  background-color: rgba(0, 0, 0, 0.63);
+  color: white; }
+
+.accordion-p {
+  padding-left: 1.5rem; }
+
+.accordion-button:not(.collapsed) {
+  background-color: #d18902;
+  color: white;
+  font-weight: 900; }
+
+.accordion-button:focus {
+  z-index: 3;
+  box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.589) !important;
+  background-color: d18902be; }
+
+/*          clases de container (GRID) BOOTSTRAP   dentro de divSecciones    */
+.container {
+  padding-top: 5vw; }
+  .container .row {
+    justify-content: space-between;
+    padding: 2% 0%; }
+  .container .row div {
+    width: 33%;
+    max-width: 214px; }
+  .container .row div img {
+    width: 100%; }
