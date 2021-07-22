@@ -1,0 +1,32 @@
+
+
+@mixin tamanio($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+.botonLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 3rem 0rem;
+    padding: 1.5rem ;
+
+    color: black;
+    font-size: 1rem;
+    font-weight: 300;
+
+    @include tamanio(54px, 239px);
+
+    border: 3px solid black;
+    border-radius: 2px;
+    transition: all 0.2s;
+
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}

@@ -1,0 +1,40 @@
+
+
+
+.header {
+    &__imgImagen{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {                   /*          MEDIA MOBILE               */
+    
+    .header {
+        &__divImagen{
+            display: none;
+        }
+    }
+}
+
+
+.footer{
+    background-color: black;
+    height: 100px;
+    color: rgb(110, 110, 110);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .footer__containerLogos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__imagenLogoRedes{
+        width: 35px;
+        padding: 0 4px;
+    }
+}
+
+

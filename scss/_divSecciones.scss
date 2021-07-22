@@ -1,0 +1,104 @@
+
+@import "mixin&extend";
+
+.divSecciones{
+    padding: 80px 12%  2rem 12%;
+    justify-content: center;
+
+    &__h2Titulo{
+        font-family: 'Oswald', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 1rem;
+    }
+    
+    &__subLineasH2{
+        border-bottom: 5px double rgb(209, 137, 2);
+        width: 2.6rem;
+        padding-top: 1rem;
+    }
+
+    &__parrafo{
+        grid-area: parrafo ;
+    }
+
+    &__botonLink{
+
+        @extend .botonLink
+    }
+
+    &__imgFotoRedonda{
+            width: 120%;
+            margin-left: -5%;
+    }
+}
+
+
+@media (max-width: 600px) {                   /*          MEDIA MOBILE               */
+
+    .divSecciones{
+        
+        &__divFotoRedonda {
+
+            @include tamanio(80vw, 80vw);
+
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &--quienes{
+
+            padding-top: 80px;
+        }
+    }
+}
+
+/*                 MEDIA > 600 px               */
+@media (min-width: 600px) {
+
+    .divSecciones{
+        
+        &__divFotoRedonda {
+
+            @include tamanio(40vw, 40vw);
+            
+            max-width: 400px;
+            max-height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            grid-area: betular;
+        }
+
+        &--quienes{
+            display: grid;
+            grid-template-columns: 50% 40%;
+            column-gap: 5%;
+            grid-template-rows: 20% 40% 10%;
+            grid-template-areas: "titulo betular"
+                                 "parrafo betular"
+                                 "boton betular";
+        }
+
+        &__divH2Titulo{
+            grid-area: titulo;
+        }
+
+        &__parrafo{
+            grid-area: parrafo;
+        }
+
+        &__botonLink{
+            grid-area: boton;
+        }
+
+        &--cotizacion{
+            display: grid;
+            grid-template-columns: 50% 40%;
+            column-gap: 5%;
+            grid-template-rows: 40% 40%;
+            grid-template-areas: "titulo boton"
+                                 "parrafo boton";
+        }
+    }
+}
+
+
