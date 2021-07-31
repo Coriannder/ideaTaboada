@@ -11,6 +11,20 @@ body {
 .header__imgImagen {
   width: 100%; }
 
+.header__slogan {
+  /*font-size: calc(2.625rem + .9vw);*/
+  color: white;
+  font-size: 4vw;
+  font-weight: bolder;
+  position: absolute;
+  top: 25vw;
+  z-index: 1000;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif; }
+
 @media (max-width: 600px) {
   /*          MEDIA MOBILE               */
   .header__divImagen {
@@ -28,7 +42,11 @@ body {
     justify-content: center; }
   .footer .footer__imagenLogoRedes {
     width: 35px;
-    padding: 0 4px; }
+    padding: 4px; }
+
+h6 {
+  padding-left: 12%;
+  font-weight: bolder; }
 
 .botonLink, .divSecciones__botonLink {
   display: flex;
@@ -94,7 +112,8 @@ body {
     grid-template-rows: 20% 40% 10%;
     grid-template-areas: "titulo betular" "parrafo betular" "boton betular"; }
   .divSecciones__divH2Titulo {
-    grid-area: titulo; }
+    grid-area: titulo;
+    padding-left: 0; }
   .divSecciones__parrafo {
     grid-area: parrafo; }
   .divSecciones__botonLink {
