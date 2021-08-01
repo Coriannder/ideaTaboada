@@ -79,6 +79,9 @@ h6 {
     padding-top: 1rem; }
   .divSecciones__parrafo {
     grid-area: parrafo; }
+  .divSecciones__botonLink--enviar {
+    align-items: center;
+    background-color: transparent; }
   .divSecciones__imgFotoRedonda {
     width: 120%;
     margin-left: -5%; }

@@ -23,7 +23,12 @@
 
     &__botonLink{
 
-        @extend .botonLink
+        @extend .botonLink;
+
+        &--enviar{
+            align-items: center;
+            background-color: transparent;
+        }
     }
 
     &__imgFotoRedonda{
