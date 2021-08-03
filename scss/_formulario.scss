@@ -2,12 +2,14 @@
 @import "mixin&extend";
 
 .formulario{
+    
     padding: 80px 12%  2rem 12%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
-    &__form{
+    &__entrada{
         width: 50%;
     }
 
@@ -29,26 +31,36 @@
         @include tamanio(120px, 80%);
     }
 
+    &__botonLink{
+        @extend .botonLink;
+        align-items: center;
+
+    }
+
 }
 
-@media (max-width: 600px) {                   /*          MEDIA MOBILE               */
+@media (max-width: 992px) {                   /*          MEDIA                */
     .formulario{
         flex-direction: column;
+        justify-content: center;
 
-        &__form{
-            width: 100%;
+        &__entrada, &__enviar{
+            width: 352px;
+            align-self: center;
         }
     
         &__input{
 
-            @include tamanio(40px, 100%);
-            background-color: rgba(202, 201, 201, 0.212);
+            @include tamanio(40px, 352px);
+            /*background-color: rgba(202, 201, 201, 0.212);*/
         }
     
         &__textArea{
-            @include tamanio(120px, 100%);
+            @include tamanio(120px, 352px);
+        }
+
+        &__botonLink{
+            color: black;
         }
     }
-
-
 }
