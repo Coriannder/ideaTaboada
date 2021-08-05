@@ -8,6 +8,9 @@ h1 {
 body {
   font-family: 'Ubuntu', sans-serif; }
 
+.header__divImagen {
+  padding-top: 57px; }
+
 .header__imgImagen {
   width: 100%; }
 
@@ -234,7 +237,6 @@ h6 {
     justify-content: space-between;
     padding: 2% 0%; }
   .container .row div {
-    width: 33%;
-    max-width: 214px; }
+    width: 33%; }
   .container .row div img {
     width: 100%; }
