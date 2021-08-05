@@ -188,6 +188,9 @@ h6 {
     .formulario__botonLink {
       color: black; } }
 
+.mapa {
+  width: 100%; }
+
 /*         clases de barra de navegacion (dentro de footer) con BOOTSTRAP          */
 .navbar-brand {
   display: flex; }
