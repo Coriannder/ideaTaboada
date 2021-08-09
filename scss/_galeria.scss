@@ -1,13 +1,10 @@
 
-.galeria{
-    
-    &__divAncha{
-        width: 100%;
-        
+
+.imgGaleria:hover{
+    filter: brightness(50%) !important;
+
     }
 
-    &__divLarga{
-        
-    }
-    
+.m-5{
+    margin-top: 8rem !important;
 }

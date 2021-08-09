@@ -22,16 +22,18 @@
     }
 
     &__botonLink{
-
         @extend .botonLink;
-
-
     }
 
     &__imgFotoRedonda{
             width: 120%;
             margin-left: -5%;
     }
+
+}
+
+.divSeparation{
+    padding-top: 10vw;
 }
 
 

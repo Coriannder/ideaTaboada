@@ -50,6 +50,27 @@ h6 {
   padding-left: 12%;
   font-weight: bolder; }
 
+/*                   Clases de BOOTSTRAP                   */
+.navbar-brand {
+  display: flex; }
+
+.navbar-collapse {
+  justify-content: center; }
+
+.bg-dark {
+  background-color: black !important; }
+
+.dropdown-menu {
+  background-color: black; }
+
+.dropdown-item {
+  color: white; }
+
+#navbarDropdownMenuLink :focus .accordion-button:not(.collapsed) {
+  background-color: #d18902;
+  color: white;
+  font-weight: 900; }
+
 .botonLink, .divSecciones__botonLink, .formulario__botonLink {
   display: flex;
   flex-direction: column;
@@ -244,3 +265,9 @@ h6 {
     width: 33%; }
   .container .row div img {
     width: 100%; }
+
+.imgGaleria:hover {
+  filter: brightness(50%) !important; }
+
+.m-5 {
+  margin-top: 8rem !important; }

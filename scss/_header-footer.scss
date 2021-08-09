@@ -63,3 +63,32 @@ h6{
 }
 
 
+/*                   Clases de BOOTSTRAP                   */
+.navbar-brand{
+    display: flex;
+}
+.navbar-collapse{
+    justify-content: center;
+}
+
+.bg-dark {
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+.dropdown-item {
+    color: white;
+}
+
+#navbarDropdownMenuLink :focus{
+
+    .accordion-button:not(.collapsed) {
+        background-color: #d18902;
+        color: white;
+        font-weight: 900;
+}
+}
+
+
