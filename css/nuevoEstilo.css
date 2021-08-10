@@ -21,7 +21,7 @@ body {
   font-weight: bolder;
   text-shadow: 0.1em 0.25em 0.5em black;
   position: absolute;
-  top: 25vw;
+  top: 30vw;
   z-index: 1000;
   width: 100%;
   text-align: center;
@@ -108,6 +108,9 @@ h6 {
     width: 120%;
     margin-left: -5%; }
 
+.divSeparation {
+  padding-top: 10vw; }
+
 @media (max-width: 600px) {
   /*          MEDIA MOBILE               */
   .divSecciones__divFotoRedonda {
@@ -147,9 +150,6 @@ h6 {
     column-gap: 5%;
     grid-template-rows: 40% 40%;
     grid-template-areas: "titulo boton" "parrafo boton"; } }
-
-.divSeparation {
-  padding-top: 10vw; }
 
 .botonLink, .divSecciones__botonLink, .formulario__botonLink {
   display: flex;
@@ -215,56 +215,6 @@ h6 {
 
 .mapa {
   width: 100%; }
-
-/*         clases de barra de navegacion (dentro de footer) con BOOTSTRAP          */
-.navbar-brand {
-  display: flex; }
-
-.navbar-collapse {
-  justify-content: center; }
-
-.bg-dark {
-  background-color: black !important; }
-
-.dropdown-menu {
-  background-color: black; }
-
-.dropdown-item {
-  color: white; }
-
-#navbarDropdownMenuLink :focus .accordion-button:not(.collapsed) {
-  background-color: #d18902;
-  color: white;
-  font-weight: 900; }
-
-/*          Acordion en servicios            */
-.accordion-button {
-  background-color: rgba(0, 0, 0, 0.63);
-  color: white; }
-
-.accordion-p {
-  padding-left: 1.5rem; }
-
-.accordion-button:not(.collapsed) {
-  background-color: #d18902;
-  color: white;
-  font-weight: 900; }
-
-.accordion-button:focus {
-  z-index: 3;
-  box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.589) !important;
-  background-color: d18902be; }
-
-/*          clases de container (GRID) BOOTSTRAP   dentro de divSecciones    */
-.container {
-  padding-top: 5vw; }
-  .container .row {
-    justify-content: space-between;
-    padding: 2% 0%; }
-  .container .row div {
-    width: 33%; }
-  .container .row div img {
-    width: 100%; }
 
 .imgGaleria:hover {
   filter: brightness(50%) !important; }
