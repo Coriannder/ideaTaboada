@@ -66,11 +66,6 @@ h6 {
 .dropdown-item {
   color: white; }
 
-#navbarDropdownMenuLink :focus .accordion-button:not(.collapsed) {
-  background-color: #d18902;
-  color: white;
-  font-weight: 900; }
-
 .botonLink, .divSecciones__botonLink, .formulario__botonLink {
   display: flex;
   flex-direction: column;
@@ -221,3 +216,19 @@ h6 {
 
 .m-5 {
   margin-top: 8rem !important; }
+
+.accordion-button:not(.collapsed) {
+  background-color: #d18902;
+  color: white;
+  font-weight: 900; }
+
+.accordion-button:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.178); }
+
+.accordion-button {
+  color: beige;
+  font-weight: bolder;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.418); }
