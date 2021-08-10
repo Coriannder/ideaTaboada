@@ -114,8 +114,8 @@ h6 {
 @media (max-width: 600px) {
   /*          MEDIA MOBILE               */
   .divSecciones__divFotoRedonda {
-    width: 80vw;
-    height: 80vw;
+    width: 70vw;
+    height: 70vw;
     border-radius: 50%;
     overflow: hidden; }
   .divSecciones--quienes {
