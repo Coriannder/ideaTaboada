@@ -18,7 +18,7 @@
     }
 
     &__parrafo{
-        grid-area: parrafo ;
+        grid-area: parrafo;
     }
 
     &__botonLink{
@@ -34,13 +34,17 @@
 
 .divSeparation{
     padding-top: 10vw;
+
+    &--nosotros{
+        background-color: rgba(128, 128, 128, 0.226);
+    }
+    
 }
 
 
-@media (max-width: 600px) {                   /*          MEDIA MOBILE               */
+@media (max-width: 600px) {             /*          MEDIA < 600px               */
 
     .divSecciones{
-        
         &__divFotoRedonda {
 
             @include tamanio(75vw, 75vw);
@@ -50,17 +54,14 @@
         }
 
         &--quienes{
-
             padding-top: 80px;
         }
     }
 }
 
-/*                 MEDIA > 600 px               */
-@media (min-width: 600px) {
+@media (min-width: 600px) {        /*                 MEDIA > 600 px               */
 
     .divSecciones{
-        
         &__divFotoRedonda {
 
             @include tamanio(40vw, 40vw);
@@ -74,7 +75,7 @@
 
         &--quienes{
             display: grid;
-            grid-template-columns: 50% 40%;
+            grid-template-columns: 50% 50%;
             column-gap: 5%;
             grid-template-rows: 20% 40% 10%;
             grid-template-areas: "titulo betular"
@@ -103,7 +104,63 @@
             grid-template-areas: "titulo boton"
                                  "parrafo boton";
         }
+
     }
+
+}
+@media (min-width: 920px) {                           /*     MEDIA > 920px          */
+
+    .divSecciones{
+
+        &--nosotros{
+            display: grid;
+            grid-template-columns: 40% 50%;
+            column-gap: 5%;
+            grid-template-areas: "foto bio";
+                                 
+                                 
+        }
+
+        &__ladoFoto{
+            grid-area: foto;
+        }
+
+        &__ladoBio{
+            grid-area: bio;
+        }
+
+        &__imgChefNosotros{
+           width: 30vw;  
+        }
+
+        &__contImagenChef{
+            border-radius: 2vw;
+            overflow: hidden;
+        }
+    }
+
 }
 
+@media (max-width: 920px) {                       /*      MEDIA < 920px       */
 
+    .divSecciones{
+
+        &--nosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;                        
+        }
+
+        &__imgChefNosotros{
+            height: auto;
+            width: 100%;
+        }
+
+        &__contImagenChef{
+            border-radius: 2vw;
+            overflow: hidden;
+            width: 277px;
+
+        }
+    }
+}

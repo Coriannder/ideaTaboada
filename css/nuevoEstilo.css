@@ -105,9 +105,11 @@ h6 {
 
 .divSeparation {
   padding-top: 10vw; }
+  .divSeparation--nosotros {
+    background-color: rgba(128, 128, 128, 0.226); }
 
 @media (max-width: 600px) {
-  /*          MEDIA MOBILE               */
+  /*          MEDIA < 600px               */
   .divSecciones__divFotoRedonda {
     width: 75vw;
     height: 75vw;
@@ -116,8 +118,8 @@ h6 {
   .divSecciones--quienes {
     padding-top: 80px; } }
 
-/*                 MEDIA > 600 px               */
 @media (min-width: 600px) {
+  /*                 MEDIA > 600 px               */
   .divSecciones__divFotoRedonda {
     width: 40vw;
     height: 40vw;
@@ -128,7 +130,7 @@ h6 {
     grid-area: betular; }
   .divSecciones--quienes {
     display: grid;
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 50% 50%;
     column-gap: 5%;
     grid-template-rows: 20% 40% 10%;
     grid-template-areas: "titulo betular" "parrafo betular" "boton betular"; }
@@ -145,6 +147,37 @@ h6 {
     column-gap: 5%;
     grid-template-rows: 40% 40%;
     grid-template-areas: "titulo boton" "parrafo boton"; } }
+
+@media (min-width: 920px) {
+  /*     MEDIA > 920px          */
+  .divSecciones--nosotros {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    column-gap: 5%;
+    grid-template-areas: "foto bio"; }
+  .divSecciones__ladoFoto {
+    grid-area: foto; }
+  .divSecciones__ladoBio {
+    grid-area: bio; }
+  .divSecciones__imgChefNosotros {
+    width: 30vw; }
+  .divSecciones__contImagenChef {
+    border-radius: 2vw;
+    overflow: hidden; } }
+
+@media (max-width: 920px) {
+  /*      MEDIA < 920px       */
+  .divSecciones--nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .divSecciones__imgChefNosotros {
+    height: auto;
+    width: 100%; }
+  .divSecciones__contImagenChef {
+    border-radius: 2vw;
+    overflow: hidden;
+    width: 277px; } }
 
 .botonLink, .divSecciones__botonLink, .formulario__botonLink {
   display: flex;
