@@ -15,7 +15,6 @@ body {
   width: 100%; }
 
 .header__slogan {
-  /*font-size: calc(2.625rem + .9vw);*/
   color: white;
   font-size: 4.5vw;
   font-weight: bolder;
@@ -133,7 +132,9 @@ h6 {
     grid-template-columns: 50% 50%;
     column-gap: 5%;
     grid-template-rows: 20% 40% 10%;
-    grid-template-areas: "titulo betular" "parrafo betular" "boton betular"; }
+    grid-template-areas: "titulo betular"
+ "parrafo betular"
+ "boton betular"; }
   .divSecciones__divH2Titulo {
     grid-area: titulo;
     padding-left: 0; }
@@ -146,7 +147,8 @@ h6 {
     grid-template-columns: 50% 40%;
     column-gap: 5%;
     grid-template-rows: 40% 40%;
-    grid-template-areas: "titulo boton" "parrafo boton"; } }
+    grid-template-areas: "titulo boton"
+ "parrafo boton"; } }
 
 @media (min-width: 920px) {
   /*     MEDIA > 920px          */
